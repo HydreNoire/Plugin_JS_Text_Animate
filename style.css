@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: dimgrey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, p {
+    color: white;
+}
+
+.box {
+    overflow: hidden;
+}
+
+.anime_text span {
+    transition: all 1s ease;
+    display: inline-block;
+}
+
+.anime_text span:not(.animated) {
+    opacity: 0;
+}
+
+.anime_text_up span:not(.animated) {
+    transform: translateY(50px);
+    opacity: 1;
+}
+
+.anime_text_down span:not(.animated) {
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.anime_text_zoom_out span:not(.animated) {
+    opacity: 1;
+    transform: scale(2);
+}
+
+.anime_text_zoom_in span:not(.animated) {
+    opacity: 1;
+    transform: scale(.5);
+}
+
+.anime_text_domino span:not(.animated) {
+    opacity: 1;
+    transform: skew(30deg);
+}
