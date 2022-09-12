@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="round_text.css">
+    <script src="round_text.js" defer></script>
+    <title>Round Text | Plugin JS</title>
+</head>
+<body>
+    <a class="lien" href="index.html">Aller  à la page d'animation de texte</a>
+
+    <div>
+        <svg class="box_round" viewBox="0 0 100 100" width="300" height="300">
+            <defs>
+              <path id="circle"
+                d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"/>
+            </defs>
+            <text font-size="13.5">
+              <textPath xlink:href="#circle" class="text_round">
+                Save the planet · Save the planet ·
+              </textPath>
+            </text>
+          </svg>
+
+          <h1 class="arrow">-></h1>
+    </div>
+
+    <div>
+        <svg class="box_round_reverse" viewBox="0 0 100 100" width="150" height="150">
+            <defs>
+              <path id="circle"
+                d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"/>
+            </defs>
+            <text font-size="13.5">
+              <textPath xlink:href="#circle" class="text_round">
+                Save the planet · Save the planet ·
+              </textPath>
+            </text>
+          </svg>
+    </div>
+    
+</body>
+</html>

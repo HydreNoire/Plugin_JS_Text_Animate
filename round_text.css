@@ -1,0 +1,72 @@
+.lien {
+    margin-bottom: 2rem;
+}
+
+div {
+    position: relative;
+    cursor: pointer;
+    border-radius: 1000px;
+}
+
+.box_round {
+    background-color: aliceblue;
+    border-radius: 1000px;
+    padding: 1rem;
+    border: 2px solid black;
+    animation: rolling 8S linear infinite;
+    transition: all .2s linear;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+div:hover .box_round{
+    background-color: palegoldenrod;
+    fill: white;
+    animation: rolling 30S linear infinite;
+}
+
+div:hover .arrow {
+    color: palevioletred;
+}
+
+.arrow {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rolling {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box_round_reverse {
+    background-color: black;
+    fill: white;
+    border-radius: 1000px;
+    padding: 1rem;
+    border: 2px solid white;
+    animation: rollingReverse 8S linear infinite;
+    transition: all .2s linear;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+div:hover .box_round_reverse{
+    background-color: palegreen;
+    fill: black;
+    animation: rolling 30S linear infinite;
+}
+
+@keyframes rollingReverse {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
