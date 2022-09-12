@@ -57,3 +57,36 @@ h1, p {
     opacity: 1;
     transform: skew(30deg);
 }
+
+.anime_text_reverse_domino span:not(.animated) {
+    opacity: 1;
+    transform: skew(-30deg);
+}
+
+.anime_text_pushing_left span:not(.animated) {
+    opacity: 1;
+    transform: translateX(-50px);
+}
+
+.anime_text_pushing_right span:not(.animated) {
+    opacity: 1;
+    transform: translateX(50px);
+}
+
+.anime_text_petal span:not(.animated) {
+    opacity: 1;
+    transform: skewY(50deg) skewX(30deg) translateY(-50px);
+}
+
+.anime_text_back_shadow span:not(.animated) {
+    opacity: 0;
+    text-shadow: 15px 15px black;
+}
+
+.anime_text_typing span.animated + span:not(.animated) {
+    transition: none;
+    background: black;
+    opacity: 1;
+    transform: none;
+    color: transparent;
+}
