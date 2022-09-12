@@ -51,7 +51,7 @@ div:hover .arrow {
     border-radius: 1000px;
     padding: 1rem;
     border: 2px solid white;
-    animation: rollingReverse 8S linear infinite;
+    animation: rollingReverse 20S linear infinite;
     transition: all .2s linear;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
@@ -59,7 +59,7 @@ div:hover .arrow {
 div:hover .box_round_reverse{
     background-color: palegreen;
     fill: black;
-    animation: rolling 30S linear infinite;
+    animation: rolling 5S linear infinite;
 }
 
 @keyframes rollingReverse {
